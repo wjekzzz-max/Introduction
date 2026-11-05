@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#f6faff">
+ <meta name="description" content="권정달의 프로젝트 이야기. 개발 동기부터 실제 화면, 담당 역할과 배운 점까지 살펴보세요.">
+ <title>프로젝트 이야기 · 권정달</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="portfolio.css">
+ <script src="portfolio-data.js" defer></script>
+ <script src="portfolio.js" defer></script>
+</head>
+<body class="detail-page">
+ <a class="skip" href="#portfolio-detail">본문으로 이동</a>
+ <div class="progress" aria-hidden="true"></div>
+ <header class="header"><div class="nav-wrap detail-topbar">
+  <a class="brand" href="index.html" aria-label="권정달 소개 사이트 홈">JD<span>↗</span></a>
+  <a class="detail-back" href="index.html#portfolio">← 포트폴리오 목록</a>
+  <div class="controls"><button id="detail-theme" type="button" aria-label="테마 전환"></button></div>
+ </div></header>
+ <main id="portfolio-detail" class="detail-shell"><noscript><p>프로젝트 내용을 보려면 브라우저의 JavaScript를 켜 주세요.</p><a href="index.html#portfolio">목록으로 돌아가기</a></noscript></main>
+ <footer class="detail-footer"><a class="brand" href="index.html">JD<span>↗</span></a><span>© 2026 Kwon Jeongdal</span><a href="index.html#portfolio">다른 이야기 살펴보기 ↗</a></footer>
+ <dialog id="image-viewer" class="image-viewer" aria-label="프로젝트 이미지 확대 보기">
+  <div class="viewer-bar"><span id="viewer-count"></span><button id="viewer-close" type="button" aria-label="이미지 확대 닫기">닫기 ×</button></div>
+  <div class="viewer-image-wrap"><img id="viewer-image" src="" alt=""></div>
+  <div class="viewer-bottom"><button id="viewer-prev" type="button" aria-label="이전 이미지">←</button><p id="viewer-caption"></p><button id="viewer-next" type="button" aria-label="다음 이미지">→</button></div>
+ </dialog>
+ <button id="detail-top" type="button" aria-label="맨 위로 이동">↑</button>
+</body>
+</html>
